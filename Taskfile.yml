@@ -1,0 +1,50 @@
+version: '3'
+
+vars:
+  SRC_DIR: learn  
+  OUT_DIR: out
+  MAIN_CLASS: learn.main.Main
+
+tasks:
+  default:
+    desc: 显示所有可用任务
+    cmds:
+      - task --list
+
+  compile:
+    desc: 编译所有 Java 源码
+    cmds:
+      - mkdir -p {{.OUT_DIR}}
+      - javac -encoding UTF-8 -d {{.OUT_DIR}} $(find {{.SRC_DIR}} -name "*.java")
+
+  run:
+    desc: 编译并运行主类
+    cmds:
+      - task: compile
+      - java -cp {{.OUT_DIR}} {{.MAIN_CLASS}}
+
+  clean:
+    desc: 清理编译产物
+    cmds:
+      - rm -rf {{.OUT_DIR}}
+
+  rebuild:
+    desc: 清理后重新编译运行
+    deps: [clean]
+    cmds:
+      - task: run
+
+  tree:
+    desc: 查看项目结构
+    cmds:
+      - find {{.SRC_DIR}} -name "*.java"
+
+  watch:
+    desc: 源码变更时自动编译运行
+    dir: .
+    sources:
+      - '{{.SRC_DIR}}/**/*.java'
+    generates:
+      - '{{.OUT_DIR}}/**/*.class'
+    cmds:
+      - task: run
