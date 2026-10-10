@@ -39,6 +39,19 @@ tasks:
     cmds:
       - find {{.SRC_DIR}} -name "*.java"
 
+  tree:update:
+    desc: 生成项目结构并写入 README
+    cmds:
+      - bash scripts/update-readme-tree.sh
+
+  push:
+    desc: 更新 README 项目树后提交并推送
+    cmds:
+      - task: tree:update
+      - git add README.md
+      - 'git commit -m "docs: update project tree" || true'
+      - git push
+
   watch:
     desc: 源码变更时自动编译运行
     dir: .
