@@ -5,26 +5,21 @@ My java learning repository, along with [roadmap.sh](https://roadmap.sh/java)
 ```
 .
 ├── learn
-│   ├── LifecycleOfaProgram
-│   ├── arrays
-│   ├── basicOfOOP
-│   ├── basicSyntex
-│   ├── conditionals
-│   ├── dataType
-│   ├── loop
 │   ├── main
 │   │   └── Main.java
-│   ├── mathOperations
-│   ├── stringsAndMethods
-│   ├── typeCasting
-│   └── variablesAndScopes
+│   ├── BasicSyntex.java
+│   ├── DataType.java
+│   ├── LifecycleOfaProgram.java
+│   ├── StringsAndMethods.java
+│   ├── TypeCasting.java
+│   └── VariablesAndScopes.java
 ├── scripts
 │   └── update-readme-tree.sh
 ├── LICENSE
 ├── README.md
 └── Taskfile.yml
 
-15 directories, 5 files
+4 directories, 11 files
 ```
 <!-- TREE:END -->
 
