@@ -18,10 +18,10 @@ tasks:
       - javac -encoding UTF-8 -d {{.OUT_DIR}} $(find {{.SRC_DIR}} -name "*.java")
 
   run:
-    desc: 编译并运行主类
+    desc: 编译并运行指定类（task run -- learn.main.Main）
     cmds:
       - task: compile
-      - java -cp {{.OUT_DIR}} {{.MAIN_CLASS}}
+      - java -cp {{.OUT_DIR}} {{.CLI_ARGS | default .MAIN_CLASS}}
 
   clean:
     desc: 清理编译产物
