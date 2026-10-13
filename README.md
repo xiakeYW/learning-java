@@ -1,5 +1,5 @@
-# Learning java 
-My java learning repository, along with [roadmap.sh](https://roadmap.sh/java)
+# Learning Java
+My Java learning project, following the [roadmap.sh](https://roadmap.sh/java) roadmap.
 
 <!-- TREE:START -->
 ```
