@@ -1,5 +1,5 @@
 # Learning Java
-My Java learning project, following the [roadmap.sh](https://roadmap.sh/java) roadmap.
+我的Java学习项目, 跟随 [roadmap.sh](https://roadmap.sh/java) 
 
 <!-- TREE:START -->
 ```
