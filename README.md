@@ -6,6 +6,12 @@
 .
 ├── learn
 │   ├── basicOfOOP
+│   │   ├── AccessSpecifiers.java
+│   │   ├── AttributesAndMethods.java
+│   │   ├── ClassesAndObjects.java
+│   │   ├── FinalKeyword.java
+│   │   ├── StaticKeyword.java
+│   │   └── \
 │   ├── main
 │   │   └── Main.java
 │   ├── ArraysT.java
@@ -22,9 +28,10 @@
 │   └── update-readme-tree.sh
 ├── LICENSE
 ├── README.md
-└── Taskfile.yml
+├── Taskfile.yml
+└── java.roadmap.pdf
 
-5 directories, 15 files
+5 directories, 22 files
 ```
 <!-- TREE:END -->
 
