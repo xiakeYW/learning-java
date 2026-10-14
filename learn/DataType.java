@@ -29,5 +29,10 @@ public class DataType {
     Double o = 0.1;
     Boolean p = false;
     Character q = 'a';
+
+    // 类型判断 instanceof
+    Integer x = 100;
+    boolean y = x instanceof Integer; // true
+    System.out.println(y);
   }
 }
