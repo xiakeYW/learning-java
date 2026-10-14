@@ -10,6 +10,8 @@
 │   │   ├── AttributesAndMethods.java
 │   │   ├── ClassesAndObjects.java
 │   │   ├── FinalKeyword.java
+│   │   ├── NestedClasses.java
+│   │   ├── Packages.java
 │   │   ├── StaticKeyword.java
 │   │   └── \
 │   ├── main
@@ -31,7 +33,7 @@
 ├── Taskfile.yml
 └── java.roadmap.pdf
 
-5 directories, 22 files
+5 directories, 24 files
 ```
 <!-- TREE:END -->
 
