@@ -20,6 +20,8 @@
 │   ├── BasicSyntex.java
 │   ├── Conditionals.java
 │   ├── DataType.java
+│   ├── ExceptionHandling.java
+│   ├── LambdaExpressions.java
 │   ├── LifecycleOfaProgram.java
 │   ├── Loop.java
 │   ├── MathOperations.java
@@ -33,7 +35,7 @@
 ├── Taskfile.yml
 └── java.roadmap.pdf
 
-5 directories, 24 files
+5 directories, 26 files
 ```
 <!-- TREE:END -->
 
