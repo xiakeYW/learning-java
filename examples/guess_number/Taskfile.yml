@@ -1,0 +1,16 @@
+version: 3
+
+vars: 
+  SOURCE_DIR: com/demo
+  TARGET_DIR: out 
+  MAIN_CLASS: com.demo.GuessNumber
+
+tasks: 
+  run:
+    cmds:
+      - mkdir -p {{.TARGET_DIR}}
+      - javac -encoding UTF-8 -d {{.TARGET_DIR}} $(find {{.SOURCE_DIR}} -name "*.java")
+      - java -cp {{.TARGET_DIR}} {{.MAIN_CLASS}}
+  
+  
+
